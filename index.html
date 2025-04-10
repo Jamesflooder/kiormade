@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr" data-language="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KiorMed - Votre Assistant Médical Virtuel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.svg" alt="KiorMed Logo" class="logo">
+            <h1>KiorMed</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active" data-lang-fr="Accueil" data-lang-en="Home">Accueil</a></li>
+                <li><a href="services.html" data-lang-fr="Services" data-lang-en="Services">Services</a></li>
+                <li><a href="equipe.html" data-lang-fr="Notre Équipe" data-lang-en="Our Team">Notre Équipe</a></li>
+                <li><a href="documentation.html" data-lang-fr="Documentation" data-lang-en="Documentation">Documentation</a></li>
+                <li><a href="contact.html" data-lang-fr="Contact" data-lang-en="Contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="controls">
+            <div class="language-toggle">
+                <button id="lang-fr" class="lang-btn active">FR</button>
+                <button id="lang-en" class="lang-btn">EN</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="accueil" class="hero">
+            <div class="hero-content">
+                <h2 data-lang-fr="Votre Santé, Notre Priorité" data-lang-en="Your Health, Our Priority">Votre Santé, Notre Priorité</h2>
+                <p data-lang-fr="Consultez un médecin virtuel et analysez des images médicales grâce à l'intelligence artificielle." data-lang-en="Consult a virtual doctor and analyze medical images using artificial intelligence.">Consultez un médecin virtuel et analysez des images médicales grâce à l'intelligence artificielle.</p>
+                <a href="services.html" class="cta-button" data-lang-fr="Commencer" data-lang-en="Get Started">Commencer</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero-image.svg" alt="Médecin virtuel">
+            </div>
+        </section>
+
+        <section class="features">
+            <h2 class="section-title" data-lang-fr="Nos Fonctionnalités" data-lang-en="Our Features">Nos Fonctionnalités</h2>
+            <div class="features-container">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3 data-lang-fr="Médecin Virtuel" data-lang-en="Virtual Doctor">Médecin Virtuel</h3>
+                    <p data-lang-fr="Consultez notre assistant médical propulsé par l'IA pour obtenir des conseils médicaux." data-lang-en="Consult our AI-powered medical assistant for medical advice.">Consultez notre assistant médical propulsé par l'IA pour obtenir des conseils médicaux.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <h3 data-lang-fr="Analyse d'Images" data-lang-en="Image Analysis">Analyse d'Images</h3>
+                    <p data-lang-fr="Téléchargez une image médicale pour obtenir une analyse préliminaire." data-lang-en="Upload a medical image to get a preliminary analysis.">Téléchargez une image médicale pour obtenir une analyse préliminaire.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 data-lang-fr="Multilingue" data-lang-en="Multilingual">Multilingue</h3>
+                    <p data-lang-fr="Accédez à nos services en français et en anglais pour une expérience personnalisée." data-lang-en="Access our services in French and English for a personalized experience.">Accédez à nos services en français et en anglais pour une expérience personnalisée.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2 data-lang-fr="Prêt à essayer KiorMed?" data-lang-en="Ready to try KiorMed?">Prêt à essayer KiorMed?</h2>
+                <p data-lang-fr="Découvrez comment notre technologie peut vous aider à mieux comprendre votre santé." data-lang-en="Discover how our technology can help you better understand your health.">Découvrez comment notre technologie peut vous aider à mieux comprendre votre santé.</p>
+                <a href="services.html" class="cta-button" data-lang-fr="Explorer nos services" data-lang-en="Explore our services">Explorer nos services</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/logo.svg" alt="KiorMed Logo" class="logo">
+                <h2>KiorMed</h2>
+            </div>
+            <div class="footer-links">
+                <h3 data-lang-fr="Liens Rapides" data-lang-en="Quick Links">Liens Rapides</h3>
+                <ul>
+                    <li><a href="index.html" data-lang-fr="Accueil" data-lang-en="Home">Accueil</a></li>
+                    <li><a href="services.html" data-lang-fr="Services" data-lang-en="Services">Services</a></li>
+                    <li><a href="equipe.html" data-lang-fr="Notre Équipe" data-lang-en="Our Team">Notre Équipe</a></li>
+                    <li><a href="documentation.html" data-lang-fr="Documentation" data-lang-en="Documentation">Documentation</a></li>
+                    <li><a href="contact.html" data-lang-fr="Contact" data-lang-en="Contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3 data-lang-fr="Contact" data-lang-en="Contact">Contact</h3>
+                <p><i class="fas fa-envelope"></i> contact@kiormed.com</p>
+                <p><i class="fas fa-phone"></i> +33 1 23 45 67 89</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 KiorMed. <span data-lang-fr="Tous droits réservés." data-lang-en="All rights reserved.">Tous droits réservés.</span></p>
+        </div>
+    </footer>
+
+    <!-- Modal pour les messages de chargement et d'erreur -->
+    <div class="modal" id="loading-modal">
+        <div class="modal-content">
+            <div class="spinner"></div>
+            <p id="loading-message" data-lang-fr="Chargement en cours..." data-lang-en="Loading...">Chargement en cours...</p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

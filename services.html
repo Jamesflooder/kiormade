@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr" data-language="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KiorMed - Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="KiorMed Logo" class="logo">
+            <h1>KiorMed</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" data-lang-fr="Accueil" data-lang-en="Home">Accueil</a></li>
+                <li><a href="services.html" class="active" data-lang-fr="Services" data-lang-en="Services">Services</a></li>
+                <li><a href="equipe.html" data-lang-fr="Notre Équipe" data-lang-en="Our Team">Notre Équipe</a></li>
+                <li><a href="documentation.html" data-lang-fr="Documentation" data-lang-en="Documentation">Documentation</a></li>
+                <li><a href="contact.html" data-lang-fr="Contact" data-lang-en="Contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="controls">
+            <div class="language-toggle">
+                <button id="lang-fr" class="lang-btn active">FR</button>
+                <button id="lang-en" class="lang-btn">EN</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1 data-lang-fr="Nos Services" data-lang-en="Our Services">Nos Services</h1>
+            <p data-lang-fr="Découvrez nos services de santé propulsés par l'intelligence artificielle" data-lang-en="Discover our AI-powered health services">Découvrez nos services de santé propulsés par l'intelligence artificielle</p>
+        </section>
+
+        <section class="services-section">
+            <div class="service-card" id="medecin-virtuel">
+                <div class="service-icon">
+                    <i class="fas fa-user-md"></i>
+                </div>
+                <div class="service-content">
+                    <h2 data-lang-fr="Médecin Virtuel" data-lang-en="Virtual Doctor">Médecin Virtuel</h2>
+                    <p data-lang-fr="Consultez notre assistant médical propulsé par l'IA pour obtenir des conseils médicaux généraux et des informations sur vos symptômes." data-lang-en="Consult our AI-powered medical assistant for general medical advice and information about your symptoms.">Consultez notre assistant médical propulsé par l'IA pour obtenir des conseils médicaux généraux et des informations sur vos symptômes.</p>
+                    <p class="disclaimer" data-lang-fr="Note: Ce service ne remplace pas une consultation avec un professionnel de la santé." data-lang-en="Note: This service does not replace a consultation with a healthcare professional.">Note: Ce service ne remplace pas une consultation avec un professionnel de la santé.</p>
+                    <button class="service-button" data-service="medecin" data-lang-fr="Consulter maintenant" data-lang-en="Consult now">Consulter maintenant</button>
+                </div>
+            </div>
+
+            <div class="service-card" id="analyse-image">
+                <div class="service-icon">
+                    <i class="fas fa-image"></i>
+                </div>
+                <div class="service-content">
+                    <h2 data-lang-fr="Analyse d'Images Médicales" data-lang-en="Medical Image Analysis">Analyse d'Images Médicales</h2>
+                    <p data-lang-fr="Téléchargez une image médicale pour obtenir une analyse préliminaire grâce à notre technologie d'intelligence artificielle avancée." data-lang-en="Upload a medical image to get a preliminary analysis using our advanced artificial intelligence technology.">Téléchargez une image médicale pour obtenir une analyse préliminaire grâce à notre technologie d'intelligence artificielle avancée.</p>
+                    <p class="disclaimer" data-lang-fr="Note: Cette analyse est préliminaire et ne remplace pas un diagnostic médical professionnel." data-lang-en="Note: This analysis is preliminary and does not replace a professional medical diagnosis.">Note: Cette analyse est préliminaire et ne remplace pas un diagnostic médical professionnel.</p>
+                    <button class="service-button" data-service="analyse" data-lang-fr="Analyser une image" data-lang-en="Analyze an image">Analyser une image</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section de consultation virtuelle -->
+        <section id="consultation" class="consultation hidden">
+            <div class="consultation-container">
+                <div class="consultation-header">
+                    <h2 data-lang-fr="Consultation Virtuelle" data-lang-en="Virtual Consultation">Consultation Virtuelle</h2>
+                    <button class="close-button"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="chat-container">
+                    <div class="chat-messages" id="chat-messages">
+                        <div class="message bot">
+                            <div class="message-content">
+                                <p data-lang-fr="Bonjour, je suis votre assistant médical virtuel. Comment puis-je vous aider aujourd'hui?" data-lang-en="Hello, I am your virtual medical assistant. How can I help you today?">Bonjour, je suis votre assistant médical virtuel. Comment puis-je vous aider aujourd'hui?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-input">
+                        <textarea id="user-input" data-lang-fr-placeholder="Décrivez vos symptômes ou posez une question..." data-lang-en-placeholder="Describe your symptoms or ask a question..." placeholder="Décrivez vos symptômes ou posez une question..."></textarea>
+                        <button id="send-message"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+                <div class="disclaimer">
+                    <p><strong data-lang-fr="Avertissement:" data-lang-en="Warning:">Avertissement:</strong> <span data-lang-fr="Cet assistant médical virtuel fournit des informations générales et ne remplace pas une consultation avec un professionnel de la santé. En cas d'urgence, contactez immédiatement les services d'urgence." data-lang-en="This virtual medical assistant provides general information and does not replace a consultation with a healthcare professional. In case of emergency, immediately contact emergency services.">Cet assistant médical virtuel fournit des informations générales et ne remplace pas une consultation avec un professionnel de la santé. En cas d'urgence, contactez immédiatement les services d'urgence.</span></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section d'analyse d'image -->
+        <section id="image-analysis" class="image-analysis hidden">
+            <div class="analysis-container">
+                <div class="analysis-header">
+                    <h2 data-lang-fr="Analyse d'Image Médicale" data-lang-en="Medical Image Analysis">Analyse d'Image Médicale</h2>
+                    <button class="close-button"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="upload-container">
+                    <div class="upload-area" id="upload-area">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <p data-lang-fr="Glissez et déposez une image ou cliquez pour sélectionner" data-lang-en="Drag and drop an image or click to select">Glissez et déposez une image ou cliquez pour sélectionner</p>
+                        <input type="file" id="image-upload" accept="image/*" hidden>
+                    </div>
+                    <div class="preview-container hidden" id="preview-container">
+                        <img id="image-preview" src="" alt="Aperçu de l'image">
+                        <button id="analyze-button" data-lang-fr="Analyser l'image" data-lang-en="Analyze image">Analyser l'image</button>
+                    </div>
+                </div>
+                <div class="analysis-results hidden" id="analysis-results">
+                    <h3 data-lang-fr="Résultats de l'analyse" data-lang-en="Analysis Results">Résultats de l'analyse</h3>
+                    <div class="results-content" id="results-content"></div>
+                </div>
+                <div class="disclaimer">
+                    <p><strong data-lang-fr="Avertissement:" data-lang-en="Warning:">Avertissement:</strong> <span data-lang-fr="Cette analyse d'image est préliminaire et ne remplace pas un diagnostic médical professionnel. Consultez toujours un médecin pour une évaluation complète." data-lang-en="This image analysis is preliminary and does not replace a professional medical diagnosis. Always consult a doctor for a complete evaluation.">Cette analyse d'image est préliminaire et ne remplace pas un diagnostic médical professionnel. Consultez toujours un médecin pour une évaluation complète.</span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="KiorMed Logo" class="logo">
+                <h2>KiorMed</h2>
+            </div>
+            <div class="footer-links">
+                <h3 data-lang-fr="Liens Rapides" data-lang-en="Quick Links">Liens Rapides</h3>
+                <ul>
+                    <li><a href="index.html" data-lang-fr="Accueil" data-lang-en="Home">Accueil</a></li>
+                    <li><a href="services.html" data-lang-fr="Services" data-lang-en="Services">Services</a></li>
+                    <li><a href="equipe.html" data-lang-fr="Notre Équipe" data-lang-en="Our Team">Notre Équipe</a></li>
+                    <li><a href="documentation.html" data-lang-fr="Documentation" data-lang-en="Documentation">Documentation</a></li>
+                    <li><a href="contact.html" data-lang-fr="Contact" data-lang-en="Contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3 data-lang-fr="Contact" data-lang-en="Contact">Contact</h3>
+                <p><i class="fas fa-envelope"></i> contact@kiormed.com</p>
+                <p><i class="fas fa-phone"></i> +33 1 23 45 67 89</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 KiorMed. <span data-lang-fr="Tous droits réservés." data-lang-en="All rights reserved.">Tous droits réservés.</span></p>
+        </div>
+    </footer>
+
+    <!-- Modal pour les messages de chargement et d'erreur -->
+    <div class="modal" id="loading-modal">
+        <div class="modal-content">
+            <div class="spinner"></div>
+            <p id="loading-message" data-lang-fr="Chargement en cours..." data-lang-en="Loading...">Chargement en cours...</p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

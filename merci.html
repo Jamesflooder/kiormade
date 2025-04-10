@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr" data-language="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KiorMed - Merci pour votre message</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.svg" alt="KiorMed Logo" class="logo">
+            <h1>KiorMed</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" data-lang-fr="Accueil" data-lang-en="Home">Accueil</a></li>
+                <li><a href="services.html" data-lang-fr="Services" data-lang-en="Services">Services</a></li>
+                <li><a href="equipe.html" data-lang-fr="Notre Équipe" data-lang-en="Our Team">Notre Équipe</a></li>
+                <li><a href="documentation.html" data-lang-fr="Documentation" data-lang-en="Documentation">Documentation</a></li>
+                <li><a href="contact.html" data-lang-fr="Contact" data-lang-en="Contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="controls">
+            <div class="language-toggle">
+                <button id="lang-fr" class="lang-btn active">FR</button>
+                <button id="lang-en" class="lang-btn">EN</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="thank-you-section">
+            <div class="thank-you-container">
+                <i class="fas fa-check-circle"></i>
+                <h1 data-lang-fr="Merci pour votre message !" data-lang-en="Thank you for your message!">Merci pour votre message !</h1>
+                <p data-lang-fr="Nous avons bien reçu votre demande et nous vous répondrons dans les plus brefs délais." 
+                   data-lang-en="We have received your request and will respond to you as soon as possible.">
+                    Nous avons bien reçu votre demande et nous vous répondrons dans les plus brefs délais.
+                </p>
+                <a href="index.html" class="cta-button" data-lang-fr="Retour à l'accueil" data-lang-en="Back to home">Retour à l'accueil</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/logo.svg" alt="KiorMed Logo" class="logo">
+                <h2>KiorMed</h2>
+            </div>
+            <div class="footer-links">
+                <h3 data-lang-fr="Liens Rapides" data-lang-en="Quick Links">Liens Rapides</h3>
+                <ul>
+                    <li><a href="index.html" data-lang-fr="Accueil" data-lang-en="Home">Accueil</a></li>
+                    <li><a href="services.html" data-lang-fr="Services" data-lang-en="Services">Services</a></li>
+                    <li><a href="equipe.html" data-lang-fr="Notre Équipe" data-lang-en="Our Team">Notre Équipe</a></li>
+                    <li><a href="documentation.html" data-lang-fr="Documentation" data-lang-en="Documentation">Documentation</a></li>
+                    <li><a href="contact.html" data-lang-fr="Contact" data-lang-en="Contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3 data-lang-fr="Contact" data-lang-en="Contact">Contact</h3>
+                <p><i class="fas fa-envelope"></i> contact@kiormed.com</p>
+                <p><i class="fas fa-phone"></i> +33 1 23 45 67 89</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 KiorMed. <span data-lang-fr="Tous droits réservés." data-lang-en="All rights reserved.">Tous droits réservés.</span></p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

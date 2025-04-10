@@ -1,0 +1,6 @@
+# Dépendances pour KiorMed
+# Note: Cette application est principalement basée sur des technologies frontend
+# et utilise des APIs externes via JavaScript
+
+# Pour le serveur de développement (optionnel)
+http-server==14.1.1
